@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3EE55F0D-0926-4693-AA10-610F5AFFB138}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NeonPlayerConcept.Droid</RootNamespace>
+    <AssemblyName>NeonPlayerConcept.Droid</AssemblyName>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidSupportedAbis>arm64-v8a;armeabi;armeabi-v7a;x86</AndroidSupportedAbis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Xamarin.Android.Support.Vector.Drawable">
+      <HintPath>..\packages\Xamarin.Android.Support.Vector.Drawable.23.4.0.1\lib\MonoAndroid403\Xamarin.Android.Support.Vector.Drawable.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Animated.Vector.Drawable">
+      <HintPath>..\packages\Xamarin.Android.Support.Animated.Vector.Drawable.23.4.0.1\lib\MonoAndroid403\Xamarin.Android.Support.Animated.Vector.Drawable.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.23.4.0.1\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.23.4.0.1\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.RecyclerView">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.RecyclerView.23.4.0.1\lib\MonoAndroid403\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
+    </Reference>
+    <Reference Include="RecyclerViewAnimators">
+      <HintPath>..\packages\RecyclerViewAnimators.2.1.0.0\lib\MonoAndroid403\RecyclerViewAnimators.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PlayerActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SongsQueueActivity.cs" />
+    <Compile Include="Data\DataSource.cs" />
+    <Compile Include="Data\Song.cs" />
+    <Compile Include="FavouritesPager\FavouritesSongsAdapter.cs" />
+    <Compile Include="SongsRecyclerView\SongViewHolder.cs" />
+    <Compile Include="SongsRecyclerView\SongsRecyclerAdapter.cs" />
+    <Compile Include="SongsRecyclerView\DividerItemDecoration.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\layout\PlayerViewLayout.axml" />
+    <AndroidResource Include="Resources\drawable\abba.jpg" />
+    <AndroidResource Include="Resources\drawable\aguilera2.jpg" />
+    <AndroidResource Include="Resources\drawable\alizee1.jpg" />
+    <AndroidResource Include="Resources\drawable\alizee2.jpg" />
+    <AndroidResource Include="Resources\drawable\alizee3.jpg" />
+    <AndroidResource Include="Resources\drawable\bm1.jpg" />
+    <AndroidResource Include="Resources\drawable\bm2.jpg" />
+    <AndroidResource Include="Resources\drawable\bm3.png" />
+    <AndroidResource Include="Resources\drawable\bm4.jpg" />
+    <AndroidResource Include="Resources\drawable\bm5.jpg" />
+    <AndroidResource Include="Resources\drawable\britney1.jpg" />
+    <AndroidResource Include="Resources\drawable\britney2.jpg" />
+    <AndroidResource Include="Resources\drawable\britney4.jpg" />
+    <AndroidResource Include="Resources\drawable\byp.jpg" />
+    <AndroidResource Include="Resources\drawable\byp1.jpg" />
+    <AndroidResource Include="Resources\drawable\edm.jpg" />
+    <AndroidResource Include="Resources\drawable\fergie.jpg" />
+    <AndroidResource Include="Resources\drawable\gaga.jpg" />
+    <AndroidResource Include="Resources\drawable\gta.jpg" />
+    <AndroidResource Include="Resources\drawable\hp.jpg" />
+    <AndroidResource Include="Resources\drawable\keane.jpg" />
+    <AndroidResource Include="Resources\drawable\kp.jpg" />
+    <AndroidResource Include="Resources\drawable\psy1.jpg" />
+    <AndroidResource Include="Resources\drawable\psy2.png" />
+    <AndroidResource Include="Resources\drawable\psy3.jpg" />
+    <AndroidResource Include="Resources\drawable\swift.jpg" />
+    <AndroidResource Include="Resources\drawable\tbl1.jpg" />
+    <AndroidResource Include="Resources\drawable\tbl2.jpg" />
+    <AndroidResource Include="Resources\drawable\tbland.jpg" />
+    <AndroidResource Include="Resources\drawable\tbland2.jpg" />
+    <AndroidResource Include="Resources\layout\SongsQueueLayout.axml" />
+    <AndroidResource Include="Resources\values\color.xml" />
+    <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\drawable\background_rounded.xml" />
+    <AndroidResource Include="Resources\drawable\ic_add_circle_outline_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable\ic_clear_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable\aguilera1.png" />
+    <AndroidResource Include="Resources\layout\Page_item_favorites.xml" />
+    <AndroidResource Include="Resources\values\style.xml" />
+    <AndroidResource Include="Resources\anim\fade_in.xml" />
+    <AndroidResource Include="Resources\anim\fade_out.xml" />
+    <AndroidResource Include="Resources\anim\slide_to_bottom.xml" />
+    <AndroidResource Include="Resources\layout\List_item_recycler_view.xml" />
+    <AndroidResource Include="Resources\drawable\movable_item.png" />
+    <AndroidResource Include="Resources\drawable\line_divider.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
+    <Folder Include="Resources\layout\" />
+    <Folder Include="Data\" />
+    <Folder Include="Resources\anim\" />
+    <Folder Include="FavouritesPager\" />
+    <Folder Include="SongsRecyclerView\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Android.Support.Vector.Drawable.23.4.0.1\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.23.4.0.1\build\Xamarin.Android.Support.Vector.Drawable.targets')" />
+</Project>

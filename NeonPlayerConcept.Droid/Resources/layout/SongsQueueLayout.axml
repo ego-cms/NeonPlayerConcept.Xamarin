@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorBackground">
+<!-- Invisible for animations -->
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cancel"
+        android:layout_centerHorizontal="true"
+        android:text="Songs Queue"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+<!-- Invisible for animations -->
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_clear_white_24dp" />
+<!-- Invisible for animations -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fav_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+<!-- Invisible for animations -->
+    <TextView
+        android:id="@+id/fav_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fav_view_pager"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="8dp"
+        android:text="FAVOURITES"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+<!-- Invisible for animations -->
+    <RelativeLayout
+        android:id="@+id/inner_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fav_label"
+        android:layout_below="@+id/header"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/background_rounded"
+        android:padding="12dp">
+        <TextView
+            android:id="@+id/song_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginStart="120dp"
+            android:text="Sleep With My Enemies"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/song_title"
+            android:layout_alignStart="@+id/song_title"
+            android:layout_below="@+id/song_title"
+            android:text="Emika - DVA" />
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorBackground" />
+        <TextView
+            android:id="@+id/next_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/divider"
+            android:layout_alignStart="@+id/divider"
+            android:layout_below="@+id/divider"
+            android:layout_marginTop="12dp"
+            android:text="NEXT:" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/next_label"
+            android:layout_marginTop="12dp" />
+    </RelativeLayout>
+<!-- Invisible for animations -->
+    <ImageView
+        android:id="@+id/main_album_thumbnail"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/abba" />
+</RelativeLayout>

@@ -1,0 +1,81 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeonPlayerConcept.iOS", "NeonPlayerConcept\NeonPlayerConcept.iOS.csproj", "{31512D5C-8FA1-46D7-BDFD-070AD7AC2272}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeonPlayerConcept.Droid", "NeonPlayerConcept.Droid\NeonPlayerConcept.Droid.csproj", "{3EE55F0D-0926-4693-AA10-610F5AFFB138}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31512D5C-8FA1-46D7-BDFD-070AD7AC2272}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{31512D5C-8FA1-46D7-BDFD-070AD7AC2272}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{31512D5C-8FA1-46D7-BDFD-070AD7AC2272}.Release|iPhone.ActiveCfg = Release|iPhone
+		{31512D5C-8FA1-46D7-BDFD-070AD7AC2272}.Release|iPhone.Build.0 = Release|iPhone
+		{31512D5C-8FA1-46D7-BDFD-070AD7AC2272}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{31512D5C-8FA1-46D7-BDFD-070AD7AC2272}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{31512D5C-8FA1-46D7-BDFD-070AD7AC2272}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{31512D5C-8FA1-46D7-BDFD-070AD7AC2272}.Debug|iPhone.Build.0 = Debug|iPhone
+		{31512D5C-8FA1-46D7-BDFD-070AD7AC2272}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31512D5C-8FA1-46D7-BDFD-070AD7AC2272}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EE55F0D-0926-4693-AA10-610F5AFFB138}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{3EE55F0D-0926-4693-AA10-610F5AFFB138}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{3EE55F0D-0926-4693-AA10-610F5AFFB138}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{3EE55F0D-0926-4693-AA10-610F5AFFB138}.Release|iPhone.Build.0 = Release|Any CPU
+		{3EE55F0D-0926-4693-AA10-610F5AFFB138}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{3EE55F0D-0926-4693-AA10-610F5AFFB138}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{3EE55F0D-0926-4693-AA10-610F5AFFB138}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{3EE55F0D-0926-4693-AA10-610F5AFFB138}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{3EE55F0D-0926-4693-AA10-610F5AFFB138}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EE55F0D-0926-4693-AA10-610F5AFFB138}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EE55F0D-0926-4693-AA10-610F5AFFB138}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EE55F0D-0926-4693-AA10-610F5AFFB138}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
+		$1.ResourceNamePolicy = FileFormatDefault
+		$0.TextStylePolicy = $2
+		$2.TabsToSpaces = False
+		$2.inheritsSet = VisualStudio
+		$2.inheritsScope = text/plain
+		$2.scope = text/x-csharp
+		$0.XmlFormattingPolicy = $3
+		$3.inheritsSet = Mono
+		$3.inheritsScope = application/xml
+		$3.scope = application/xml
+		$0.TextStylePolicy = $4
+		$4.inheritsSet = VisualStudio
+		$4.inheritsScope = text/plain
+		$4.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $5
+		$5.IndentSwitchSection = True
+		$5.NewLinesForBracesInProperties = True
+		$5.NewLinesForBracesInAccessors = True
+		$5.NewLinesForBracesInAnonymousMethods = True
+		$5.NewLinesForBracesInControlBlocks = True
+		$5.NewLinesForBracesInAnonymousTypes = True
+		$5.NewLinesForBracesInObjectCollectionArrayInitializers = True
+		$5.NewLinesForBracesInLambdaExpressionBody = True
+		$5.NewLineForElse = True
+		$5.NewLineForCatch = True
+		$5.NewLineForFinally = True
+		$5.NewLineForMembersInObjectInit = True
+		$5.NewLineForMembersInAnonymousTypes = True
+		$5.NewLineForClausesInQuery = True
+		$5.SpacingAfterMethodDeclarationName = False
+		$5.SpaceAfterMethodCallName = False
+		$5.SpaceBeforeOpenSquareBracket = False
+		$5.inheritsSet = Mono
+		$5.inheritsScope = text/x-csharp
+		$5.scope = text/x-csharp
+	EndGlobalSection
+EndGlobal

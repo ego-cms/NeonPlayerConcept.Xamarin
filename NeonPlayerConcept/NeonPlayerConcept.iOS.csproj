@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{31512D5C-8FA1-46D7-BDFD-070AD7AC2272}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>NeonPlayerConcept.iOS</RootNamespace>
+    <AssemblyName>NeonPlayerConcept.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+    <DeviceSpecificBuild>false</DeviceSpecificBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants></DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants></DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\abba.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\abba.imageset\abba-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\abba.imageset\abba-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\abba.imageset\abba.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\aguilera1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\aguilera1.imageset\aguilera1-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\aguilera1.imageset\aguilera1-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\aguilera1.imageset\aguilera1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\aguilera2.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\aguilera2.imageset\aguilera2-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\aguilera2.imageset\aguilera2-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\aguilera2.imageset\aguilera2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\alizee1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\alizee1.imageset\alizee1-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\alizee1.imageset\alizee1-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\alizee1.imageset\alizee1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\alizee2.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\alizee2.imageset\alizee2-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\alizee2.imageset\alizee2-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\alizee2.imageset\alizee2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\alizee3.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\alizee3.imageset\alizee3-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\alizee3.imageset\alizee3-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\alizee3.imageset\alizee3.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\bm1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\bm1.imageset\bm1-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\bm1.imageset\bm1-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\bm1.imageset\bm1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\bm2.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\bm2.imageset\bm2-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\bm2.imageset\bm2-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\bm2.imageset\bm2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\bm3.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\bm3.imageset\bm3-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\bm3.imageset\bm3-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\bm3.imageset\bm3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\bm4.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\bm4.imageset\bm4-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\bm4.imageset\bm4-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\bm4.imageset\bm4.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\bm5.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\bm5.imageset\bm5-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\bm5.imageset\bm5-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\bm5.imageset\bm5.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\britney1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\britney1.imageset\britney1-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\britney1.imageset\britney1-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\britney1.imageset\britney1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\britney2.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\britney2.imageset\britney2-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\britney2.imageset\britney2-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\britney2.imageset\britney2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\britney3.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\britney3.imageset\britney3-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\britney3.imageset\britney3-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\britney3.imageset\britney3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\britney4.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\britney4.imageset\britney4-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\britney4.imageset\britney4-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\britney4.imageset\britney4.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\byp.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\byp.imageset\byp-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\byp.imageset\byp-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\byp.imageset\byp.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\byp1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\byp1.imageset\byp1-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\byp1.imageset\byp1-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\byp1.imageset\byp1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\edm.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\edm.imageset\edm-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\edm.imageset\edm-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\edm.imageset\edm.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\empty.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\fergie.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\fergie.imageset\fergie-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\fergie.imageset\fergie-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\fergie.imageset\fergie.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\gaga.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\gaga.imageset\TheFame%28RED%29-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\gaga.imageset\TheFame%28RED%29-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\gaga.imageset\TheFame%28RED%29.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\gta.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\gta.imageset\gta-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\gta.imageset\gta-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\gta.imageset\gta.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\hp.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\hp.imageset\hp-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\hp.imageset\hp-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\hp.imageset\hp.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\keane.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\keane.imageset\keane-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\keane.imageset\keane-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\keane.imageset\keane.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\kp.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\kp.imageset\kp-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\kp.imageset\kp-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\kp.imageset\kp.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\psy1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\psy1.imageset\psy1-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\psy1.imageset\psy1-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\psy1.imageset\psy1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\psy2.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\psy2.imageset\psy2-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\psy2.imageset\psy2-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\psy2.imageset\psy2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\psy3.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\psy3.imageset\psy3-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\psy3.imageset\psy3-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\psy3.imageset\psy3.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\swift.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\swift.imageset\swift-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\swift.imageset\swift-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\swift.imageset\swift.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\tbl1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\tbl1.imageset\tbl1-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\tbl1.imageset\tbl1-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\tbl1.imageset\tbl1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\tbl2.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\tbl2.imageset\tbl2-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\tbl2.imageset\tbl2-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\tbl2.imageset\tbl2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\tbland.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\tbland.imageset\tbland-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\tbland.imageset\tbland-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\tbland.imageset\tbland.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\tbland2.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\tbland2.imageset\tbland2-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\tbland2.imageset\tbland2-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\tbland2.imageset\tbland2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\abba.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\abba.imageset\abba-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\abba.imageset\abba-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\abba.imageset\abba.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\aguilera1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\aguilera1.imageset\aguilera1-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\aguilera1.imageset\aguilera1-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\aguilera1.imageset\aguilera1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\aguilera2.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\aguilera2.imageset\aguilera2-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\aguilera2.imageset\aguilera2-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\aguilera2.imageset\aguilera2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\alizee1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\alizee1.imageset\alizee1-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\alizee1.imageset\alizee1-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\alizee1.imageset\alizee1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\alizee2.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\alizee2.imageset\alizee2-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\alizee2.imageset\alizee2-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\alizee2.imageset\alizee2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\alizee3.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\alizee3.imageset\alizee3-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\alizee3.imageset\alizee3-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\alizee3.imageset\alizee3.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\bm1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\bm1.imageset\bm1-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\bm1.imageset\bm1-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\bm1.imageset\bm1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\bm2.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\bm2.imageset\bm2-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\bm2.imageset\bm2-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\bm2.imageset\bm2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\bm3.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\bm3.imageset\bm3-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\bm3.imageset\bm3-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\bm3.imageset\bm3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\bm4.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\bm4.imageset\bm4-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\bm4.imageset\bm4-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\bm4.imageset\bm4.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\bm5.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\bm5.imageset\bm5-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\bm5.imageset\bm5-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\bm5.imageset\bm5.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\britney1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\britney1.imageset\britney1-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\britney1.imageset\britney1-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\britney1.imageset\britney1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\britney2.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\britney2.imageset\britney2-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\britney2.imageset\britney2-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\britney2.imageset\britney2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\britney3.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\britney3.imageset\britney3-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\britney3.imageset\britney3-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\britney3.imageset\britney3.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\britney4.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\britney4.imageset\britney4-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\britney4.imageset\britney4-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\britney4.imageset\britney4.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\byp.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\byp.imageset\byp-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\byp.imageset\byp-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\byp.imageset\byp.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\byp1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\byp1.imageset\byp1-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\byp1.imageset\byp1-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\byp1.imageset\byp1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\edm.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\edm.imageset\edm-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\edm.imageset\edm-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\edm.imageset\edm.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\empty.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\fergie.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\fergie.imageset\fergie-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\fergie.imageset\fergie-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\fergie.imageset\fergie.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\gaga.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\gaga.imageset\TheFame%28RED%29-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\gaga.imageset\TheFame%28RED%29-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\gaga.imageset\TheFame%28RED%29.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\gta.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\gta.imageset\gta-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\gta.imageset\gta-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\gta.imageset\gta.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\hp.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\hp.imageset\hp-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\hp.imageset\hp-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\hp.imageset\hp.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\keane.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\keane.imageset\keane-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\keane.imageset\keane-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\keane.imageset\keane.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\kp.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\kp.imageset\kp-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\kp.imageset\kp-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\kp.imageset\kp.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\psy1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\psy1.imageset\psy1-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\psy1.imageset\psy1-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\psy1.imageset\psy1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\psy2.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\psy2.imageset\psy2-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\psy2.imageset\psy2-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\psy2.imageset\psy2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\psy3.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\psy3.imageset\psy3-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\psy3.imageset\psy3-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\psy3.imageset\psy3.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\swift.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\swift.imageset\swift-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\swift.imageset\swift-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\swift.imageset\swift.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\tbl1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\tbl1.imageset\tbl1-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\tbl1.imageset\tbl1-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\tbl1.imageset\tbl1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\tbl2.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\tbl2.imageset\tbl2-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\tbl2.imageset\tbl2-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\tbl2.imageset\tbl2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\tbland.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\tbland.imageset\tbland-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\tbland.imageset\tbland-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\tbland.imageset\tbland.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\tbland2.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\tbland2.imageset\tbland2-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\tbland2.imageset\tbland2-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\covers\tbland2.imageset\tbland2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Abba.imageset\abba.jpg" />
+    <ImageAsset Include="Assets.xcassets\Abba.imageset\abba-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Abba.imageset\abba-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Abba.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Aguilera1.imageset\aguilera1.png" />
+    <ImageAsset Include="Assets.xcassets\Aguilera1.imageset\aguilera1-1.png" />
+    <ImageAsset Include="Assets.xcassets\Aguilera1.imageset\aguilera1-2.png" />
+    <ImageAsset Include="Assets.xcassets\Aguilera1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Aguilera2.imageset\aguilera2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Aguilera2.imageset\aguilera2-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Aguilera2.imageset\aguilera2-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Aguilera2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Alizee1.imageset\alizee1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Alizee1.imageset\alizee1-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Alizee1.imageset\alizee1-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Alizee1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Alizee2.imageset\alizee2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Alizee2.imageset\alizee2-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Alizee2.imageset\alizee2-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Alizee2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Bm1.imageset\bm1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Bm1.imageset\bm1-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Bm1.imageset\bm1-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Bm1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Bm2.imageset\bm2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Bm2.imageset\bm2-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Bm2.imageset\bm2-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Bm2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Bm3.imageset\bm3.png" />
+    <ImageAsset Include="Assets.xcassets\Bm3.imageset\bm3-1.png" />
+    <ImageAsset Include="Assets.xcassets\Bm3.imageset\bm3-2.png" />
+    <ImageAsset Include="Assets.xcassets\Bm3.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Bm4.imageset\bm4.jpg" />
+    <ImageAsset Include="Assets.xcassets\Bm4.imageset\bm4-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Bm4.imageset\bm4-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Bm4.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Bm5.imageset\bm5.jpg" />
+    <ImageAsset Include="Assets.xcassets\Bm5.imageset\bm5-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Bm5.imageset\bm5-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Bm5.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Britney1.imageset\britney1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Britney1.imageset\britney1-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Britney1.imageset\britney1-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Britney1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Britney2.imageset\britney2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Britney2.imageset\britney2-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Britney2.imageset\britney2-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Britney2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Britney3.imageset\britney3.png" />
+    <ImageAsset Include="Assets.xcassets\Britney3.imageset\britney3-1.png" />
+    <ImageAsset Include="Assets.xcassets\Britney3.imageset\britney3-2.png" />
+    <ImageAsset Include="Assets.xcassets\Britney3.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Britney4.imageset\britney4.jpg" />
+    <ImageAsset Include="Assets.xcassets\Britney4.imageset\britney4-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Britney4.imageset\britney4-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Britney4.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Edm.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Edm.imageset\edm.jpg" />
+    <ImageAsset Include="Assets.xcassets\Edm.imageset\edm-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Edm.imageset\edm-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Fergie.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Fergie.imageset\fergie-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Fergie.imageset\fergie-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Fergie.imageset\fergie.jpg" />
+    <ImageAsset Include="Assets.xcassets\Gaga.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Gaga.imageset\TheFame%28RED%29-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Gaga.imageset\TheFame%28RED%29-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Gaga.imageset\TheFame%28RED%29.jpg" />
+    <ImageAsset Include="Assets.xcassets\Gta.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Gta.imageset\gta-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Gta.imageset\TheFame%28RED%29.jpg" />
+    <ImageAsset Include="Assets.xcassets\Gta.imageset\gta-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Gta.imageset\gta.jpg" />
+    <ImageAsset Include="Assets.xcassets\Hp.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Hp.imageset\hp.jpg" />
+    <ImageAsset Include="Assets.xcassets\Hp.imageset\hp-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Hp.imageset\hp-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Keane.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Keane.imageset\keane.jpg" />
+    <ImageAsset Include="Assets.xcassets\Keane.imageset\keane-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Keane.imageset\keane-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Kp.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Kp.imageset\kp.jpg" />
+    <ImageAsset Include="Assets.xcassets\Kp.imageset\kp-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Kp.imageset\kp-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Psy1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Psy1.imageset\psy1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Psy1.imageset\psy1-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Psy1.imageset\psy1-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Psy2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Psy2.imageset\psy2.png" />
+    <ImageAsset Include="Assets.xcassets\Psy2.imageset\psy2-1.png" />
+    <ImageAsset Include="Assets.xcassets\Psy2.imageset\psy2-2.png" />
+    <ImageAsset Include="Assets.xcassets\Psy3.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Psy3.imageset\psy3.jpg" />
+    <ImageAsset Include="Assets.xcassets\Psy3.imageset\psy3-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Psy3.imageset\psy3-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Tbl1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Tbl1.imageset\tbl1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Tbl1.imageset\tbl1-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Tbl1.imageset\tbl1-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Tbl2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Tbl2.imageset\tbl2-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Tbl2.imageset\tbl2-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Tbl2.imageset\tbl2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Tbland1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Tbland1.imageset\tbland.jpg" />
+    <ImageAsset Include="Assets.xcassets\Tbland1.imageset\tbland-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Tbland1.imageset\tbland-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Tbland2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Tbland2.imageset\tbland2-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Tbland2.imageset\tbland2-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Tbland2.imageset\tbland2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Byp1.imageset\byp.jpg" />
+    <ImageAsset Include="Assets.xcassets\Byp1.imageset\byp-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Byp1.imageset\byp-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Byp1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Byp2.imageset\byp1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Byp2.imageset\byp1-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Byp2.imageset\byp1-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Byp2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Swift.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Swift.imageset\swift.jpg" />
+    <ImageAsset Include="Assets.xcassets\Swift.imageset\swift-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Swift.imageset\swift-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\byp1.imageset\byp-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\byp1.imageset\byp-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\byp1.imageset\byp.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\gta.imageset\TheFame%28RED%29.jpg" />
+    <ImageAsset Include="Assets.xcassets\Icon_Add.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Icon_Add.imageset\Add.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\PlayerScreen.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\PlayerScreen.imageset\PlayerScreen-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\PlayerScreen.imageset\PlayerScreen-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\PlayerScreen.imageset\PlayerScreen-3.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\PlayerBlurScreen.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\PlayerBlurScreen.imageset\PlayerBlurScreen-1.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\PlayerBlurScreen.imageset\PlayerBlurScreen-2.jpg" />
+    <ImageAsset Include="Resources\Assets.xcassets\PlayerBlurScreen.imageset\PlayerBlurScreen-3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Assets.xcassets\Abba.imageset\" />
+    <Folder Include="Assets.xcassets\Abba.imageset\" />
+    <Folder Include="Assets.xcassets\Aguilera1.imageset\" />
+    <Folder Include="Assets.xcassets\Aguilera2.imageset\" />
+    <Folder Include="Assets.xcassets\Alizee1.imageset\" />
+    <Folder Include="Assets.xcassets\Alizee2.imageset\" />
+    <Folder Include="Assets.xcassets\Bm1.imageset\" />
+    <Folder Include="Assets.xcassets\Bm2.imageset\" />
+    <Folder Include="Assets.xcassets\Bm3.imageset\" />
+    <Folder Include="Assets.xcassets\Bm4.imageset\" />
+    <Folder Include="Assets.xcassets\Bm5.imageset\" />
+    <Folder Include="Assets.xcassets\Britney1.imageset\" />
+    <Folder Include="Assets.xcassets\Britney2.imageset\" />
+    <Folder Include="Assets.xcassets\Britney3.imageset\" />
+    <Folder Include="Assets.xcassets\Britney4.imageset\" />
+    <Folder Include="Assets.xcassets\Edm.imageset\" />
+    <Folder Include="Assets.xcassets\Fergie.imageset\" />
+    <Folder Include="Assets.xcassets\Gaga.imageset\" />
+    <Folder Include="Assets.xcassets\Gta.imageset\" />
+    <Folder Include="Assets.xcassets\Hp.imageset\" />
+    <Folder Include="Assets.xcassets\Keane.imageset\" />
+    <Folder Include="Assets.xcassets\Kp.imageset\" />
+    <Folder Include="Assets.xcassets\Psy1.imageset\" />
+    <Folder Include="Assets.xcassets\Psy2.imageset\" />
+    <Folder Include="Assets.xcassets\Psy3.imageset\" />
+    <Folder Include="Assets.xcassets\Tbl1.imageset\" />
+    <Folder Include="Assets.xcassets\Tbl2.imageset\" />
+    <Folder Include="Assets.xcassets\Tbland1.imageset\" />
+    <Folder Include="Assets.xcassets\Tbland2.imageset\" />
+    <Folder Include="Data\" />
+    <Folder Include="Assets.xcassets\Byp1.imageset\" />
+    <Folder Include="Assets.xcassets\Byp2.imageset\" />
+    <Folder Include="Assets.xcassets\Swift.imageset\" />
+    <Folder Include="Cells\" />
+    <Folder Include="SongsTable\" />
+    <Folder Include="SongsCollection\" />
+    <Folder Include="ViewControllers\" />
+    <Folder Include="Segue\" />
+    <Folder Include="Assets.xcassets\Icon_Add.imageset\" />
+    <Folder Include="Cells\CollectionCell\" />
+    <Folder Include="Resources\Assets.xcassets\PlayerScreen.imageset\" />
+    <Folder Include="Resources\Assets.xcassets\PlayerBlurScreen.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Cells\CollectionCell\FavouriteSongCollectionViewCell.xib" />
+    <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppDelegate.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Data\Song.cs" />
+    <Compile Include="Data\DataSource.cs" />
+    <Compile Include="Cells\SongQueueTableViewCell.cs" />
+    <Compile Include="Cells\SongQueueTableViewCell.designer.cs">
+      <DependentUpon>SongQueueTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SongsTable\SongsTableViewSource.cs" />
+    <Compile Include="SongsCollection\SongsCollectionViewSource.cs" />
+    <Compile Include="SongsCollection\CenterCellCollectionViewFlowLayout.cs" />
+    <Compile Include="ViewControllers\PlayerViewController.cs" />
+    <Compile Include="ViewControllers\PlayerViewController.designer.cs">
+      <DependentUpon>PlayerViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\SongsQueueViewController.cs" />
+    <Compile Include="ViewControllers\SongsQueueViewController.designer.cs">
+      <DependentUpon>SongsQueueViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Segue\SongsQueueSegue.cs" />
+    <Compile Include="Segue\SongsQueueSegue.designer.cs">
+      <DependentUpon>SongsQueueSegue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cells\CollectionCell\FavouriteSongCollectionViewCell.cs" />
+    <Compile Include="Cells\CollectionCell\FavouriteSongCollectionViewCell.designer.cs">
+      <DependentUpon>FavouriteSongCollectionViewCell.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\OpenSans-Regular.ttf" />
+    <BundleResource Include="Resources\varela round.ttf" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>
