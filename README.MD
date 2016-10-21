@@ -1,11 +1,14 @@
 [![eGo-CMS](https://rawgithub.com/ego-cms/Resources/master/Badges_by_EGO/by_EGO.svg)](http://ego-cms.com/?utm_source=github)
 [![License](https://rawgit.com/ego-cms/Resources/master/License/license.svg)]()
 
-# Neon Player Concept for iOS (Xamarin)
+# Neon Player Concept for Xamarin
 
 ## What is this?
 
-Implementation of our [Animation Concept](https://dribbble.com/shots/2744351-Neon-Player-Concept) for iOS(Xamarin).
+Implementation of our [Animation Concept](https://dribbble.com/shots/2744351-Neon-Player-Concept) for Xamarin.
+
+## Plans
+- finish Android solution
 
 ## Screenshots
 
