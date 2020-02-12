@@ -12,6 +12,7 @@ namespace NeonPlayerConcept.iOS
         public static void Main(string[] args)
         {
             UIApplication.Main(args, null, "AppDelegate");
+            
         }
     }
 }
